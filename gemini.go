@@ -21,7 +21,7 @@ func GeminiImage(imgData []byte) (string, error) {
 	}
 	defer client.Close()
 
-	model := client.GenerativeModel("gemini-pro-vision")
+	model := client.GenerativeModel("gemini-1.5-flash")
 	value := float32(ImageTemperture)
 	model.Temperature = &value
 	prompt := []genai.Part{
@@ -46,7 +46,7 @@ func startNewChatSession() *genai.ChatSession {
 	if err != nil {
 		log.Fatal(err)
 	}
-	model := client.GenerativeModel("gemini-pro")
+	model := client.GenerativeModel("gemini-1.5-flash")
 	value := float32(ChatTemperture)
 	model.Temperature = &value
 	cs := model.StartChat()
