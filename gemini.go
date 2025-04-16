@@ -1,7 +1,3 @@
-Temperture 和 ChatTemperture 改為 ImageTemperature 和 ChatTemperature。
-Context: 對於長時間運行的服務（例如 Web 伺服器），考慮傳遞來自請求的 context 或使用 context.WithTimeout 而不是總是使用 context.Background()。
-註解: 可以添加更多中文註解來解釋程式碼的特定部分。
-修正後的範例 (僅修改錯誤處理和拼寫)
 package main
 
 import (
@@ -15,8 +11,8 @@ import (
 	"google.golang.org/api/option"
 )
 
-const ImageTemperature = 0.9 // 修正拼寫
-const ChatTemperature = 0.9  // 修正拼寫
+const ImageTemperature = 0.8 // 修正拼寫
+const ChatTemperature = 0.3  // 修正拼寫
 
 // 從環境變數讀取 API Key，你需要設定 "GEMINI_API_KEY" 這個環境變數
 var geminiKey = os.Getenv("GEMINI_API_KEY")
