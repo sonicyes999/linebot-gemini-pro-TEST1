@@ -15,8 +15,8 @@ import (
 	"google.golang.org/api/option"
 )
 
-const ImageTemperature = 0.8 // 修正拼寫
-const ChatTemperature = 0.3  // 修正拼寫
+const ImageTemperature = 0.9 // 修正拼寫
+const ChatTemperature = 0.9  // 修正拼寫
 
 // 從環境變數讀取 API Key，你需要設定 "GEMINI_API_KEY" 這個環境變數
 var geminiKey = os.Getenv("GEMINI_API_KEY")
